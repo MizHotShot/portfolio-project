@@ -12,12 +12,12 @@ function calculateAge(birthDate) {
     return age;
 }
 
-// Set your birthdate
+// Set my birthdate
 const birthDate = "1998-04-22";
 
-// Get the span element where you want to display the age
+// Get the span element
 const ageElement = document.getElementById("age");
 
-// Calculate and update your age
+// Calculate and update age
 const age = calculateAge(birthDate);
 ageElement.textContent = age;
