@@ -56,7 +56,7 @@ nav {
 }
 
 #navbar-container.open {
-    height: 25%;
+    height: 15%;
     display: flex;
 }
 
