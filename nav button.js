@@ -1,6 +1,6 @@
 const toggleButton = document.getElementById('toggleButton');
-const navbar = document.getElementById('navbar');
+const navbarContainer = document.getElementById('navbar-container');
 
 toggleButton.addEventListener('click', () => {
-    navbar.classList.toggle('open'); // Toggle the 'open' class
+    navbarContainer.classList.toggle('open'); // Toggle the 'open' class
 });
