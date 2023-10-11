@@ -10,9 +10,10 @@ h1, h2, h3 {
     font-size: 45px;
 }
 
-h4, h5, p {
+h4, h5, p, a {
     font-family: 'Monda', sans-serif;
     font-size: 16px;
+    text-decoration: none;
 }
 
 /* Nav */
@@ -37,6 +38,7 @@ h4, h5, p {
     cursor: pointer;
     background-color: #272727;
     border: none;
+    z-index: 2;
 }
 
 nav {
@@ -56,4 +58,21 @@ nav {
 #navbar-container.open {
     height: 25%;
     display: flex;
+}
+
+#navbar.open {
+    display: flex;
+    overflow:  visible;
+    height: 100%;
+}
+ 
+nav ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 200px 200px;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
 }
