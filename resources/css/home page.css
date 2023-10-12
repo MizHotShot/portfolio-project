@@ -2,8 +2,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightgrey;
 }
+
+main {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    transition: margin-top 0.5s ease;
+}
+
 /* Text */
 h1, h2, h3 {
     font-family: 'Julius Sans One', sans-serif;
@@ -103,4 +112,9 @@ nav a {
 a:hover {
     color: darkslategrey;
     transition: color 600ms ease;
+}
+
+/* Header */
+header {
+    flex: 1;
 }

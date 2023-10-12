@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ariel Spiegel</title>
-        <link href="resources/css/home page.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    </head>
+
+<head>
+    <title>Ariel Spiegel</title>
+    <link href="resources/css/home page.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="navbar-container">
+        <button id="toggleButton" class="nav-button" type="button"><i id="plus"
+                class="fa-solid fa-plus fa-xl"></i></button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Ariel Spiegel</a></li> <!-- Links to home page -->
+                <li><a href="#">About</a></li>
+                <li><a href="contact page.html">Contact</a></li>
+                <li><a href="#web1">Website1</a></li>
+                <li><a href="#web2">Website2</a></li>
+                <li><a href="#web3">Website3</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
-        <body>
-            <div id="navbar-container">
-                <button id="toggleButton" class="nav-button" type="button"><i id="plus" class="fa-solid fa-plus fa-xl"></i></button>
-                <nav id="navbar">
-                    <ul>
-                        <li><a href="index.html">Ariel Spiegel</a></li> <!-- Links to home page -->
-                        <li><a href="#">About</a></li>
-                        <li><a href="contact page.html">Contact</a></li>
-                        <li><a href="#web1">Website1</a></li>
-                        <li><a href="#web2">Website2</a></li>
-                        <li><a href="#web3">Website3</a></li>
-                    </ul>
-                </nav>
+        <header>
+            <h4>Ariel Spiegel</h4>
+            <!-- <img> custom logo or image will go here-->
+            <ul>
+                <li>
+                    <h4>Design</h4>
+                </li>
+                <li>
+                    <h4>Coding</h4>
+                </li>
+                <li>
+                    <h4>Illustration</h4>
+                </li>
+            </ul>
+        </header>
+        <!-- each section takes up a whole screen on desktop-->
+        <section id="about-me">
+            <h2>About Ariel</h2>
+            <!-- Set up javascript to accurately show age in real time-->
+            <p>I'm a <span id="age">x</span> year old artist who grew up in both Queens and Long Island, New York. I've
+                been classically trained in both fine art and design, however the majority of what I know is entirely
+                self taught. After spending years of doing commission work I realized I'd prefer to do art I want rather
+                than what others want. Then I picked up coding.</p>
+            <p>After getting certified on Codecademy for Front End Dev Engineering, I can now merge my interest in
+                design as well as the challenge of coding.</p>
+            <p>These days I mostly code, draw for fun, or playing video games. I get bored staying on the same thing for
+                too long so I'm always teaching myself something new. Most people would say staying glued to their
+                computers is a curse, not me.</p>
+            <!-- Add social media links maybe? Or links to art portfolio?-->
+        </section>
+        <section id="portfolio">
+            <div id="web1" class="website">
+                <!-- replace this with image of website homepage -->
+                <div class="placeholder"></div>
+                <h5><a href="#" target="_blank">Website name here and link</a></h5>
             </div>
-            <header>
-                <h4>Ariel Spiegel</h4>
-                <!-- <img> custom logo or image will go here-->
-                <ul>
-                    <li><h4>Design</h4></li>
-                    <li><h4>Coding</h4></li>
-                    <li><h4>Illustration</h4></li>
-                </ul>
-            </header>
-            <!-- each section takes up a whole screen on desktop-->
-            <section id="about-me">
-                <h2>About Ariel</h2>
-                <!-- Set up javascript to accurately show age in real time-->
-                <p>I'm a <span id="age">x</span> year old artist who grew up in both Queens and Long Island, New York. I've been classically trained in both fine art and design, however the majority of what I know is entirely self taught. After spending years of doing commission work I realized I'd prefer to do art I want rather than what others want. Then I picked up coding.</p>
-                <p>After getting certified on Codecademy for Front End Dev Engineering, I can now merge my interest in design as well as the challenge of coding.</p>
-                <p>These days I mostly code, draw for fun, or playing video games. I get bored staying on the same thing for too long so I'm always teaching myself something new. Most people would say staying glued to their computers is a curse, not me.</p>
-                <!-- Add social media links maybe? Or links to art portfolio?-->
-            </section>
-            <section id="portfolio">
-                <div id="web1" class="website">
-                    <!-- replace this with image of website homepage -->
-                    <div class="placeholder"></div>
-                    <h5><a href="#" target="_blank">Website name here and link</a></h5>
-                </div>
-                <div id="web2" class="website">
-                    <!-- replace this with image of website homepage -->
-                    <div class="placeholder"></div>
-                    <h5><a href="#" target="_blank">Website name here and link</a></h5>
-                </div>
-                <div id="web3" class="website">
-                    <!-- replace this with image of website homepage -->
-                    <div class="placeholder"></div>
-                    <h5><a href="#" target="_blank">Website name here and link</a></h5>
-                </div>
-            </section>
-            <footer>
-                <h5>© Ariel Spiegel 2023</h5>
-            </footer>
-            <!-- javascript code-->
-            <script src="nav button.js"></script>
-            <script src="ageupdater.js"></script>
-        </body>
+            <div id="web2" class="website">
+                <!-- replace this with image of website homepage -->
+                <div class="placeholder"></div>
+                <h5><a href="#" target="_blank">Website name here and link</a></h5>
+            </div>
+            <div id="web3" class="website">
+                <!-- replace this with image of website homepage -->
+                <div class="placeholder"></div>
+                <h5><a href="#" target="_blank">Website name here and link</a></h5>
+            </div>
+        </section>
+        <footer>
+            <h5>© Ariel Spiegel 2023</h5>
+        </footer>
     </main>
+    <!-- javascript code-->
+    <script src="nav button.js"></script>
+    <script src="ageupdater.js"></script>
+</body>
+
 </html>
