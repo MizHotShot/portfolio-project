@@ -41,8 +41,18 @@ h4, h5, p, a {
     z-index: 2;
 }
 
-#toggleButton i {
+#plus {
     /* make this position absolute top 90% or something */
+    position: absolute;
+    bottom: 50%;
+    color: white;
+    rotate: none;
+    transition: rotate 600ms ease-in-out, bottom 600ms ease-in-out;
+}
+
+#plus.open {
+    bottom: 15%;
+    rotate: 45deg;
 }
 
 nav {
@@ -73,14 +83,24 @@ nav {
 nav ul {
     display: grid;
     list-style: none;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 100px);
     text-decoration: none;
+    margin-right: 2rem;
+    padding: 0;
+    gap: 1em;
+    z-index: 3;
 }
 
 nav li {
-    padding: 10px 0 10px 0;
+    text-align: right;
+    margin: 10px 0 10px 0;
 }
 
 nav a {
     color: white;
+}
+
+a:hover {
+    color: darkslategrey;
+    transition: color 600ms ease;
 }
