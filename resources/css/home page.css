@@ -131,6 +131,10 @@ header ul {
     width: fit-content;
     margin: 0;
     padding: 0;
+    margin: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 header li {
@@ -160,6 +164,20 @@ section {
     margin: 0 10px 0;
 }
 
+#portfolio {
+    margin-top: 100px;
+}
+
+/* About me */
+#about-me {
+    height: 70vh;
+}
+
+#about-me p {
+    padding: 20px;
+    width: 60%;
+}
+
 /* placeholder */
 .placeholder {
     width: 70%;
@@ -167,4 +185,22 @@ section {
     background-color: #272727;
 }
 
-/* */
+/* hide the scrollbar but keep function*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #272727;
+    height: 40px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer h5 {
+    color: white;
+    width: fit-content;
+}
